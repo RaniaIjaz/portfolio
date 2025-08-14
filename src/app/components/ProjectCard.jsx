@@ -12,7 +12,7 @@ const ProjectCard = ({ imgUrl, title, description, techStack, gitUrl, previewUrl
       }  overflow-hidden bg-white dark:bg-[#121212] shadow-lg h-full`}
     >
       {/* Image Section - Fixed height to match text section */}
-      <div className="md:w-1/2 h-60 md:h-auto">
+      <div className="md:w-1/2 w-full h-80 md:h-auto">
         <div
           className="h-full w-full relative group"
           style={{
@@ -44,10 +44,10 @@ const ProjectCard = ({ imgUrl, title, description, techStack, gitUrl, previewUrl
       </div>
 
       {/* Text Section - Now matches image height */}
-      <div className="md:w-1/2 p-6 flex flex-col justify-between h-full">
+      <div className="md:w-1/2 pt-6 md:p-6 flex flex-col justify-between h-full">
         <div>
           <h5 className="text-2xl font-semibold mb-3 text-black dark:text-white">{title}</h5>
-          <p className="text-gray-600 dark:text-[#ADB7BE] mb-4">{description}</p>
+          <p className="text-gray-600 dark:text-[#ADB7BE] md:mb-4">{description}</p>
         </div>
         
         <div>
@@ -55,7 +55,7 @@ const ProjectCard = ({ imgUrl, title, description, techStack, gitUrl, previewUrl
             {techStack?.map((tech, index) => (
               <span
                 key={index}
-                className="bg-gray-200 dark:bg-gray-800 text-sm px-3 py-1 rounded-full text-gray-800 dark:text-gray-200"
+                className="bg-gray-200  dark:bg-gray-800 text-sm px-3 md:py-1 rounded-full text-gray-800 dark:text-gray-200"
               >
                 {tech}
               </span>

@@ -75,7 +75,7 @@ import { motion } from "framer-motion";
 const AboutSection = () => {
   return (
     <section id="about" className="py-20 bg-white dark:bg-[#121212]">
-      <div className="container mx-auto px-6 lg:px-16 text-center">
+      <div className="container mx-auto md:px-6 lg:px-16 text-center">
         
         {/* Heading */}
         <motion.h2
@@ -83,7 +83,7 @@ const AboutSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-4xl lg:text-5xl font-extrabold bg-gradient-to-r from-primary-400 to-secondary-600 bg-clip-text text-transparent mb-8"
+          className="text-4xl sm:text-5xl font-bold text-center mb-8 dark:text-white"
         >
           About Me
         </motion.h2>
@@ -94,7 +94,7 @@ const AboutSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
-          className="max-w-3xl mx-auto text-gray-700 dark:text-gray-300 text-lg leading-relaxed"
+          className="max-w-3xl  sm:mx-auto text-gray-700 dark:text-gray-300 text-lg leading-relaxed"
         >
           I am a full stack web developer with a passion for creating
           interactive and responsive web applications. I have experience

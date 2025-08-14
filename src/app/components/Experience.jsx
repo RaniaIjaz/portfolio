@@ -152,7 +152,7 @@ const ExperienceEducationSection = () => {
   const [activeTab, setActiveTab] = useState("experience");
 
   return (
-    <section id="experience-education" className="my-16 py-10">
+    <section id="experience-education" className="my-16 pt-10">
       <h2 className="text-3xl font-bold text-center mb-8 text-black dark:text-white">
         Experience & Education
       </h2>
