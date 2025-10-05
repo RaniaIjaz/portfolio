@@ -81,12 +81,21 @@ import React, { useState } from "react";
 import { FaBriefcase, FaGraduationCap } from "react-icons/fa";
 
 const experiences = [
-  {
-    role: "MERN Developer",
-    company: "Byte Scriptez",
-    period: "Jan 2025 – Present",
+   {
+    role: "Fullstack web developer ",
+    company: "UniBotech",
+    period: "Feb 2024 – Present",
     description:
-      "Working on modern web applications using the MERN stack, Next.js, Supabase, and Firebase. Focused on responsive UI, API integration, backend development, and performance optimization.",
+"Developing and maintaining full-stack web applications using the MERN stack and WordPress. Built responsive UIs with React/Next.js, integrated APIs and Supabase/Firebase for real-time data, and customized WordPress themes and plugins to deliver client-focused solutions.",
+},
+
+  {
+    role: "MERN & WordPress Developer",
+    company: "Byte Scriptez",
+    period: "Oct 2024 – Feb 2025",
+    description:
+      // "Working on modern web applications using the MERN stack, Wordpress, Next.js, Supabase, and Firebase. Focused on responsive UI, API integration, backend development, and performance optimization.",
+      "Worked as a full-stack developer across diverse projects using the MERN stack and WordPress. Designed and optimized frontends with React/Next.js, implemented secure APIs and databases with Node.js, MongoDB, and Supabase, and customized WordPress sites for business-specific needs."
   },
   {
     role: "Software Engineer Intern",
