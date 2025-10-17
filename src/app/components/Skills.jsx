@@ -162,13 +162,13 @@ const skills = {
      { name: "Vercel/Netlify/Render", level: 90 },
     { name: "AWS", level: 80 },
   ],
-  wordpress: [
-  { name: "Themes Customization", level: 90 },
-  { name: "Plugins", level: 85 },
-  { name: "Elementor/Divi", level: 90 },
-  { name: "WooCommerce", level: 85 },
-  { name: "PHP/MySQL", level: 80 },
-],
+//   wordpress: [
+//   { name: "Themes Customization", level: 90 },
+//   { name: "Plugins", level: 85 },
+//   { name: "Elementor/Divi", level: 90 },
+//   { name: "WooCommerce", level: 85 },
+//   { name: "PHP/MySQL", level: 80 },
+// ],
 
 };
 
@@ -234,12 +234,12 @@ export default function SkillsSection() {
             color="from-purple-500 to-blue-500"
           />
 
-          <SkillCategory
+          {/* <SkillCategory
   title="WordPress Development"
   icon={<ServerIcon className="h-6 w-6" />} 
   skills={skills.wordpress}
   color="from-green-500 to-pink-500"
-/>
+/> */}
 
 
           <SkillCategory

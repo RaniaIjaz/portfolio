@@ -102,7 +102,7 @@ const AboutSection = () => {
           MongoDb, Next.js, Supabase, Firebase, HTML, CSS, and Git. I am a quick learner and I am always
           looking to expand my knowledge and skill set. I am a team player and
           I am excited to work with others to create amazing applications. */}
-          Full Stack Web Developer with a passion for creating interactive and responsive web applications. I have experience working with JavaScript, React, Redux, Node.js, Express, PostgreSQL, MongoDB, Next.js, Supabase, Firebase, WordPress (themes & plugins), HTML, CSS, and Git. I am a quick learner, always eager to expand my knowledge and skill set. I am a strong team player and excited to collaborate with others to build innovative and user-friendly applications.
+          Full Stack Web Developer with a passion for creating interactive and responsive web applications. I have experience working with JavaScript, TypeScript, React, Redux, Node.js, Express, PostgreSQL, MongoDB, Next.js, Supabase, Firebase, WordPress (themes & plugins), HTML, CSS, and Git. I am a quick learner, always eager to expand my knowledge and skill set. I am a strong team player and excited to collaborate with others to build innovative and user-friendly applications.
         </motion.p>
 
       </div>

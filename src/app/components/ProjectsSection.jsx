@@ -175,13 +175,23 @@ const ProjectsSection = () => {
     description: "5Crest is a modern platform that connects businesses with top-tier offshore professionals quickly and cost-effectively. It streamlines hiring, reduces expenses, and offers access to a diverse talent pool, enabling companies to boost productivity and maintain a competitive edge.",
     image: "/images/projects/5crest.png",
     tag: ["All", "Web"],
-    // gitUrl: "/",
+    gitUrl: "/",
     previewUrl: "https://www.5crest.com/",
-     techStack: ["WordPress", "Elementor"]
-    // techStack: ["Next.js", "Tailwind Css", "Firebase", "Firestore"]
+   
+    techStack: ["Next.js", "Tailwind Css", "Firebase", "Firestore"]
   },
     {
     id: 3,
+    title: "Career Craft",
+    description: "Career Craft is an AI-driven tool designed to help professionals and job seekers streamline their career growth. The platform enables users to create tailored resumes, generate compelling cover letters, and gain valuable industrial insights effortlessly. Leveraging the power of AI, Career Craft ensures personalized and professional outputs, making the job application process faster and more effective.",
+    image: "/images/projects/career.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/RaniaIjaz/careerCraft",
+    previewUrl: "https://career-craft-steel.vercel.app/",
+    techStack: ["Next.js", "Tailwind Css","Prisma","MongoDb", "Clerk", "Gemini"]
+  },
+    {
+    id: 4,
     title: "UniBotech",
     description: "Developed and customized a corporate website for UniBotech using WordPress and the Divi Theme.",
     image: "/images/projects/uni.png",
@@ -191,16 +201,16 @@ const ProjectsSection = () => {
      techStack: ["WordPress", "Divi Theme","Divi builder"]
     // techStack: ["Next.js", "Tailwind Css", "Firebase", "Firestore"]
   },
-  {
-    id: 4,
-    title: "Career Craft",
-    description: "Career Craft is an AI-driven tool designed to help professionals and job seekers streamline their career growth. The platform enables users to create tailored resumes, generate compelling cover letters, and gain valuable industrial insights effortlessly. Leveraging the power of AI, Career Craft ensures personalized and professional outputs, making the job application process faster and more effective.",
-    image: "/images/projects/career.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/RaniaIjaz/careerCraft",
-    previewUrl: "https://career-craft-steel.vercel.app/",
-    techStack: ["Next.js", "Tailwind Css","Prisma","MongoDb", "Clerk", "Gemini"]
-  },
+  // {
+  //   id: 3,
+  //   title: "Career Craft",
+  //   description: "Career Craft is an AI-driven tool designed to help professionals and job seekers streamline their career growth. The platform enables users to create tailored resumes, generate compelling cover letters, and gain valuable industrial insights effortlessly. Leveraging the power of AI, Career Craft ensures personalized and professional outputs, making the job application process faster and more effective.",
+  //   image: "/images/projects/career.png",
+  //   tag: ["All", "Web"],
+  //   gitUrl: "https://github.com/RaniaIjaz/careerCraft",
+  //   previewUrl: "https://career-craft-steel.vercel.app/",
+  //   techStack: ["Next.js", "Tailwind Css","Prisma","MongoDb", "Clerk", "Gemini"]
+  // },
   ];
 
   return (
