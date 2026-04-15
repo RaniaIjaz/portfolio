@@ -18,6 +18,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  overflow-x: hidden;
   background: linear-gradient(
       to bottom,
       transparent,
@@ -30,6 +31,7 @@ body {
 @layer base {
   html {
     @apply transition-colors duration-200;
+    overflow-x: hidden;
   }
   
   body {

@@ -1,79 +1,3 @@
-// "use client";
-// import React from "react";
-// import { FaBriefcase } from "react-icons/fa";
-
-// const experiences = [
-//   {
-//     role: "MERN Developer",
-//     company: "Byte Scriptez",
-//     period: "Jan 2025 – Present",
-//     description:
-//       "Working on modern web applications using the MERN stack, Next.js, Supabase, Firebase. Focused on responsive UI, API integration,backend development and performance optimization.",
-//   },
-//   {
-//     role: "Software Engineer Intern",
-//     company: "Fauji Fertilizer Company Limited",
-//     period: "Aug 2024 – Sep 2024",
-//     description:
-//       "Learned agile methodologies, gained exposure to SAP systems, cybersecurity practices, and enterprise IT operations while contributing to front-end improvements",
-//   },
-//     {
-//     role: "Web developer Intern",
-//     company: "CodeSoft",
-//     period: "April – May 2024",
-//     description:
-//       "Contributed to the development of responsive web applications, gaining hands-on experience with React.js.",
-//   },
-//   {
-//     role: "Freelance Developer",
-//     company: "Self-Employed",
-//     period: "2023 – 2024",
-//     description:
-//       "Delivered custom websites and web apps for clients, specializing in React.js, Next.js, and Tailwind CSS.",
-//   },
-// ];
-
-// const ExperienceSection = () => {
-//   return (
-//     <section id="experience" className="my-16 py-10">
-//       <h2 className="text-3xl font-bold text-center mb-12 text-black dark:text-white">
-//         Experience
-//       </h2>
-//       <div className="relative border-l-2 border-gray-300 dark:border-gray-700 pl-6">
-//         {experiences.map((exp, index) => (
-//           <div
-//             key={index}
-//             className="mb-10 ml-4 group transition-all duration-300 hover:-translate-y-1"
-//           >
-//             {/* Dot */}
-//             <span className="absolute -left-[9px] flex items-center justify-center w-5 h-5 bg-primary-500 rounded-full ring-4 ring-white dark:ring-[#18191E]">
-//               <FaBriefcase size={10} className="text-white" />
-//             </span>
-
-//             {/* Card */}
-//             <div className="bg-white dark:bg-[#18191E] p-6 rounded-xl shadow-md border border-gray-200 dark:border-gray-700 transition-all duration-300 group-hover:shadow-lg">
-//               <h3 className="text-lg font-semibold text-black dark:text-white">
-//                 {exp.role}
-//               </h3>
-//               <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">
-//                 {exp.company}
-//               </p>
-//               <p className="text-xs text-gray-500 dark:text-gray-500 mb-3">
-//                 {exp.period}
-//               </p>
-//               <p className="text-sm text-gray-700 dark:text-[#ADB7BE]">
-//                 {exp.description}
-//               </p>
-//             </div>
-//           </div>
-//         ))}
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default ExperienceSection;
-
 
 
 "use client";
@@ -84,18 +8,38 @@ const experiences = [
    {
     role: "Fullstack web developer ",
     company: "UniBotech",
-    period: "Feb 2024 – Present",
-    description:
-"Developing and maintaining full-stack web applications using the MERN stack and WordPress. Built responsive UIs with React/Next.js, integrated APIs and Supabase/Firebase for real-time data, and customized WordPress themes and plugins to deliver client-focused solutions.",
+    period: "Aug 2025 – Present",
+    description: [
+  "Delivered end-to-end full-stack applications including e-commerce platforms, admin dashboards, and task management systems from development to deployment.",
+
+  "Developed responsive and user-friendly interfaces using React and Next.js.",
+
+  "Designed and maintained RESTful APIs using Node.js, Express.js, and Prisma ORM.",
+
+  "Integrated Supabase and Firebase for real-time data handling and scalable backend services.",
+
+  "Implemented a multi-currency e-commerce system with Stripe integration, handling real-world transactions and complex user flows.",
+
+  "Optimized frontend performance using React hooks, lazy loading, and code splitting to improve rendering efficiency.",
+
+  "Built SEO-friendly Next.js applications with server-side rendering, improving search visibility and user engagement."
+]
 },
 
   {
-    role: "MERN & WordPress Developer",
+    role: "MERN Developer",
     company: "Byte Scriptez",
-    period: "Oct 2024 – Feb 2025",
-    description:
-      // "Working on modern web applications using the MERN stack, Wordpress, Next.js, Supabase, and Firebase. Focused on responsive UI, API integration, backend development, and performance optimization.",
-      "Worked as a full-stack developer across diverse projects using the MERN stack and WordPress. Designed and optimized frontends with React/Next.js, implemented secure APIs and databases with Node.js, MongoDB, and Supabase, and customized WordPress sites for business-specific needs."
+    period: "Oct 2025 – Aug 2025",
+    
+     description: 
+    [
+      "Worked as a full-stack developer across diverse projects using the MERN stack. Built scalable e-commerce, marketplace platforms, admin dashboards with multi-vendor support, Stripe/PayPal payments, Redux Toolkit, RTK Query for complex state, and optimized database schemas for performance.",
+      "Designed and optimized RESTful APIs and middleware with Node.js and Express.js, integrating third-party services and ensuring secure, efficient, and maintainable backend operations.  ",
+      "Developed responsive, reusable UI components with React/Next.js, Tailwind CSS, Ant Design, MUI, improving frontend performance via React hooks, lazy loading, and code splitting.  ",
+      "Engineered real-time features and dynamic workflows using Supabase/PostgreSQL, enabling live dashboards, notifications, and messaging with reliable, scalable performance.",
+      "Collaborated with a remote team to design, build, and deploy core features across multiple projects in various domains.",
+      
+    ]
   },
   {
     role: "Software Engineer Intern",
@@ -152,7 +96,16 @@ const TimelineCard = ({ icon, title, subtitle, period, description }) => (
         {subtitle}
       </p>
       <p className="text-xs text-gray-500 dark:text-gray-500 mb-3">{period}</p>
-      <p className="text-sm text-gray-700 dark:text-[#ADB7BE]">{description}</p>
+      {/* <p className="text-sm text-gray-700 dark:text-[#ADB7BE]">{description}</p> */}
+      <ul className="list-disc pl-5 text-sm text-gray-700 dark:text-[#ADB7BE] space-y-1">
+  {Array.isArray(description) ? (
+    description.map((point, index) => (
+      <li key={index}>{point}</li>
+    ))
+  ) : (
+    <li>{description}</li>
+  )}
+</ul>
     </div>
   </div>
 );

@@ -138,9 +138,10 @@ const skills = {
   backend: [
     { name: "Node.js", level: 95 },
     { name: "Express", level: 95 },
+    { name: "FastAPI", level: 90 },
     { name: "Authentication (JWT, OAuth)", level: 95 },
     { name: "REST APIs", level: 95 },
-    { name: "GraphQL", level: 85 },
+  
   ],
   database: [
     { name: "MongoDB", level: 98 },

@@ -159,8 +159,21 @@ const fadeInVariant = (direction) => ({
 
 const ProjectsSection = () => {
   const projects = [
-  {
+    {
     id: 1,
+    title: "UniBotech",
+ description: `A business website with an integrated multi-currency e-commerce store and admin panel. Powered by Stripe payments
+and webhooks, it enables seamless product, order, and transaction management, with SEO-optimized, ISR-based pages
+for high performance and visibility`,
+    image: "/images/projects/uni.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/RaniaIjaz/ecomerece-frontend",
+    previewUrl: "https://www.unibotech.com/",
+     techStack: [ "Next.js", "Node.js", "Express.js", "Stripe", "PostgreSQL", "Prisma", "TailwindCss"]
+  
+  },
+  {
+    id: 2,
     title: "Food Delivery Website",
     description: " A full-stack MERN application with an intuitive UI for browsing menus, adding items to a cart, placing orders, and making secure payments via Stripe. Includes a robust admin panel for managing menu items, tracking orders, and updating delivery statuses in real time. Designed for responsiveness and smooth user experience across devices.",
     image: "/images/projects/food.png",
@@ -170,18 +183,18 @@ const ProjectsSection = () => {
     techStack: ["MongoDB", "Express.js", "React.js", "Node.js", "Stripe"]
   },
   {
-    id: 2,
+    id: 3,
     title: "5Crest",
     description: "5Crest is a modern platform that connects businesses with top-tier offshore professionals quickly and cost-effectively. It streamlines hiring, reduces expenses, and offers access to a diverse talent pool, enabling companies to boost productivity and maintain a competitive edge.",
     image: "/images/projects/5crest.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/techLover1122/5crestWeb",
     previewUrl: "https://www.5crest.com/",
    
     techStack: ["Next.js", "Tailwind Css", "Firebase", "Firestore"]
   },
     {
-    id: 3,
+    id: 4,
     title: "Career Craft",
     description: "Career Craft is an AI-driven tool designed to help professionals and job seekers streamline their career growth. The platform enables users to create tailored resumes, generate compelling cover letters, and gain valuable industrial insights effortlessly. Leveraging the power of AI, Career Craft ensures personalized and professional outputs, making the job application process faster and more effective.",
     image: "/images/projects/career.png",
@@ -190,27 +203,31 @@ const ProjectsSection = () => {
     previewUrl: "https://career-craft-steel.vercel.app/",
     techStack: ["Next.js", "Tailwind Css","Prisma","MongoDb", "Clerk", "Gemini"]
   },
-    {
-    id: 4,
-    title: "UniBotech",
-    description: "Developed and customized a corporate website for UniBotech using WordPress and the Divi Theme.",
-    image: "/images/projects/uni.png",
-    // tag: ["All", "Web"],
-    // gitUrl: "/",
-    previewUrl: "https://unibotech.com/",
-     techStack: ["WordPress", "Divi Theme","Divi builder"]
-    // techStack: ["Next.js", "Tailwind Css", "Firebase", "Firestore"]
+
+   {
+    id: 5,
+    title: "Wheat & Crop Disease Detection & Solution",
+    description: "A bilingual (English/Urdu) AI-powered crop disease detection platform, enabling farmers to upload images,receive real-time diagnosis and treatment recommendations, and track their history of uploads and results through aresponsive, user-friendly interface.",
+    image: "/images/projects/disease.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/RaniaIjaz/cropDiseaseDetection",
+    //previewUrl: "https://disease-detection.vercel.app/",
+    techStack: ["Next.js","FastAPI","Express.js", "Tailwind Css","Prisma","MongoDb", "Python","Deep Learning"]
   },
-  // {
-  //   id: 3,
-  //   title: "Career Craft",
-  //   description: "Career Craft is an AI-driven tool designed to help professionals and job seekers streamline their career growth. The platform enables users to create tailored resumes, generate compelling cover letters, and gain valuable industrial insights effortlessly. Leveraging the power of AI, Career Craft ensures personalized and professional outputs, making the job application process faster and more effective.",
-  //   image: "/images/projects/career.png",
-  //   tag: ["All", "Web"],
-  //   gitUrl: "https://github.com/RaniaIjaz/careerCraft",
-  //   previewUrl: "https://career-craft-steel.vercel.app/",
-  //   techStack: ["Next.js", "Tailwind Css","Prisma","MongoDb", "Clerk", "Gemini"]
-  // },
+
+   {
+    id: 6,
+    title: "Printer Centralization Dashboard",
+    description: `A centralized printer management dashboard for production lines, enabling operators to assign and control SKU printing
+for wrappers and boxes from a single interface. Built with real-time updates, it streamlines coordination, reduces manual
+effort, and ensures efficient, synchronized operations across Unilever’s soap manufacturing processes.
+`,
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/RaniaIjaz/printerVisualization-frontend",
+    //previewUrl: "https://disease-detection.vercel.app/",
+    techStack: [ "Typescript", "React.js", "Redux", "Node.js", "Express.js", "Bootstrap", "MySQL", "Node-red"  ]
+  },
+ 
   ];
 
   return (
