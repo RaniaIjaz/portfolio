@@ -10,7 +10,8 @@ function getInitialTheme() {
   const savedTheme = localStorage.getItem('theme')
   if (savedTheme === 'light' || savedTheme === 'dark') return savedTheme
 
-  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+  // Light is the default on a first visit; the system preference does not win.
+  return 'light'
 }
 
 export function ThemeProvider({ children }) {

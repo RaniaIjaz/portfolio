@@ -162,6 +162,7 @@ const ProjectsSection = () => {
     {
     id: 1,
     title: "UniBotech",
+    date: null,
  description: `A business website with an integrated multi-currency e-commerce store and admin panel. Powered by Stripe payments
 and webhooks, it enables seamless product, order, and transaction management, with SEO-optimized, ISR-based pages
 for high performance and visibility`,
@@ -175,6 +176,7 @@ for high performance and visibility`,
   {
     id: 2,
     title: "Food Delivery Website",
+    date: "Dec 2024 – Jan 2025",
     description: " A full-stack MERN application with an intuitive UI for browsing menus, adding items to a cart, placing orders, and making secure payments via Stripe. Includes a robust admin panel for managing menu items, tracking orders, and updating delivery statuses in real time. Designed for responsiveness and smooth user experience across devices.",
     image: "/images/projects/food.png",
     tag: ["All", "Web"],
@@ -185,6 +187,7 @@ for high performance and visibility`,
   {
     id: 3,
     title: "5Crest",
+    date: null,
     description: "5Crest is a modern platform that connects businesses with top-tier offshore professionals quickly and cost-effectively. It streamlines hiring, reduces expenses, and offers access to a diverse talent pool, enabling companies to boost productivity and maintain a competitive edge.",
     image: "/images/projects/5crest.png",
     tag: ["All", "Web"],
@@ -196,6 +199,7 @@ for high performance and visibility`,
     {
     id: 4,
     title: "Career Craft",
+    date: null,
     description: "Career Craft is an AI-driven tool designed to help professionals and job seekers streamline their career growth. The platform enables users to create tailored resumes, generate compelling cover letters, and gain valuable industrial insights effortlessly. Leveraging the power of AI, Career Craft ensures personalized and professional outputs, making the job application process faster and more effective.",
     image: "/images/projects/career.png",
     tag: ["All", "Web"],
@@ -207,6 +211,7 @@ for high performance and visibility`,
    {
     id: 5,
     title: "Wheat & Crop Disease Detection & Solution",
+    date: "Apr – Sep 2026",
     description: "A bilingual (English/Urdu) AI-powered crop disease detection platform, enabling farmers to upload images,receive real-time diagnosis and treatment recommendations, and track their history of uploads and results through aresponsive, user-friendly interface.",
     image: "/images/projects/disease.png",
     tag: ["All", "Web"],
@@ -218,16 +223,41 @@ for high performance and visibility`,
    {
     id: 6,
     title: "Printer Centralization Dashboard",
+    date: "Sep – Nov 2025",
     description: `A centralized printer management dashboard for production lines, enabling operators to assign and control SKU printing
 for wrappers and boxes from a single interface. Built with real-time updates, it streamlines coordination, reduces manual
 effort, and ensures efficient, synchronized operations across Unilever’s soap manufacturing processes.
 `,
+    image: "/images/projects/printer.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/RaniaIjaz/printerVisualization-frontend",
     //previewUrl: "https://disease-detection.vercel.app/",
     techStack: [ "Typescript", "React.js", "Redux", "Node.js", "Express.js", "Bootstrap", "MySQL", "Node-red"  ]
   },
  
+  {
+    id: 7,
+    title: "Sniffari",
+    date: "Apr – Jun 2025",
+    description:
+      "A community platform for dog owners: playdate matching by breed, size, energy level and personality, a sitting and walking exchange, local events with a shared calendar, direct messaging, dog profiles and a photo gallery.",
+    image: "/images/projects/sniffari.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/techLover1122/sniffariWeb",
+    techStack: ["Next.js", "React", "Redux Toolkit", "redux-persist", "Tailwind CSS"],
+  },
+  {
+    id: 8,
+    title: "Unibotech Task Manager",
+    date: "Mar 2026",
+    description:
+      "An internal task and reporting system for assigning work across departments and employees. A daily dashboard shows every department's pending, complete and transferred counts, tasks can be transferred between employees, and reports export to Excel.",
+    image: "/images/projects/reports.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/RaniaIjaz/uniboteck-reports",
+    previewUrl: "https://www.unibotechreports.com/",
+    techStack: ["React", "Vite", "Redux Toolkit", "Express", "Prisma", "PostgreSQL", "JWT"],
+  },
   ];
 
   return (
@@ -298,9 +328,14 @@ effort, and ensures efficient, synchronized operations across Unilever’s soap 
                   isEven ? "md:order-2" : "md:order-1"
                 }`}
               >
-                <h3 className="text-2xl font-semibold mb-3 dark:text-white">
+                <h3 className="text-2xl font-semibold mb-1 dark:text-white">
                   {project.title}
                 </h3>
+                {project.date && (
+                  <p className="text-sm text-gray-500 dark:text-gray-500 mb-3">
+                    {project.date}
+                  </p>
+                )}
                 <p className="text-gray-700 dark:text-gray-300 mb-5 leading-relaxed">
                   {project.description}
                 </p>

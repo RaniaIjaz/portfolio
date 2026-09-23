@@ -5,10 +5,25 @@ import React, { useState } from "react";
 import { FaBriefcase, FaGraduationCap } from "react-icons/fa";
 
 const experiences = [
+  {
+    role: "Fullstack Software Engineer",
+    company: "Swirly Donut Inc. — Remote, Canada",
+    period: "Jun 2026 – Present",
+    description: [
+      "Built human-in-the-loop review interfaces for AI-generated suggestions — evidence display, approve/edit/dismiss flows, batch review, and handling of uncertain output — and contributed to the intelligence pipeline that turns team activity into reviewable proposals.",
+
+      "Owned full-stack features from planning to release across the Next.js web app, Electron desktop shell, and TypeScript APIs, spanning document editing, real-time collaboration and messaging, notifications and presence, search, and desktop window management.",
+
+      "Designed tenant-aware backend workflows, data models, and permission and privacy rules with PostgreSQL and Drizzle ORM; standardized security and request handling across 10+ API modules.",
+
+      "Reviewed pull requests and expanded unit, integration, contract, and Playwright end-to-end test coverage, working asynchronously in a 10-member distributed team across engineering, design, and product."
+    ]
+  },
+
    {
-    role: "Fullstack web developer ",
-    company: "UniBotech",
-    period: "Aug 2025 – Present",
+    role: "Full Stack Web Developer",
+    company: "Unibotech — Lahore, Pakistan",
+    period: "Aug 2025 – May 2026",
     description: [
   "Delivered end-to-end full-stack applications including e-commerce platforms, admin dashboards, and task management systems from development to deployment.",
 
@@ -27,9 +42,9 @@ const experiences = [
 },
 
   {
-    role: "MERN Developer",
-    company: "Byte Scriptez",
-    period: "Oct 2025 – Aug 2025",
+    role: "MERN Stack Developer",
+    company: "Byte Scripterz — Remote, Pakistan",
+    period: "Jan 2025 – Aug 2025",
     
      description: 
     [
@@ -68,15 +83,20 @@ const education = [
   {
     degree: "BS Computer Science",
     institution: "Khwaja Fareed University of Engineering and Information Technology (KFUEIT)",
-    period: "2022 – 2026",
-    description:"CGPA: 3.85",
-   
+    period: "Feb 2022 – Jan 2026",
+    description: [
+      "Graduated with a CGPA of 3.81/4.00.",
+
+      "Gold Medalist — awarded for the highest academic standing in the Department of Computer Science; Dean's Honour Roll.",
+
+      "Final Year Project: AI-Powered Wheat & Cotton Disease Detection and Solution."
+    ]
   },
   {
     degree: "Intermediate (Pre-Medical)",
     institution: "Punjab College",
     period: "2018 – 2020",
-    description:"Marks: 1020/1100"
+    description: "Marks: 1019/1100"
   },
 ];
 

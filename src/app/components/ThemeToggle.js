@@ -1,9 +1,25 @@
 'use client'
 
+import { useEffect, useState } from 'react'
 import { useTheme } from '../context/ThemeContext'
 
 export default function ThemeToggle() {
-  const { theme, toggleTheme } = useTheme("dark")
+  const { theme, toggleTheme } = useTheme()
+
+  // The server cannot read localStorage, so it always renders the light state.
+  // Showing that before hydration puts a sun on a dark page. Hold a same-size
+  // placeholder until mounted, then render the real state.
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => setMounted(true), [])
+
+  if (!mounted) {
+    return (
+      <span
+        aria-hidden
+        className="inline-block h-6 w-11 rounded-full bg-gray-200 dark:bg-gray-700"
+      />
+    )
+  }
 
   return (
     <button
